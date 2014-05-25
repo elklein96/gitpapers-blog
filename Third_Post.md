@@ -1,0 +1,1 @@
+I really have too much time on my hands.  Blogging is fun and all, but think of what I could have done in the thirty seconds it took me to write those last few sentences.  I could have drank a soda.  I could have eaten an entire meal.  Man, I'm hungry right now.  I could use some Chipotle.  I had Chipotle earlier today.  It was delicious, as always.
