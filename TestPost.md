@@ -1,0 +1,1 @@
+This is another blog post.  Writing sucks, but this site is awesome.
