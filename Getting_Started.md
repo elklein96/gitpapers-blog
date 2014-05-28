@@ -1,6 +1,9 @@
 #GitPapers
 ### A Blog Publishing Platform for Git
 
+
+
+
 ## Ready to make your first post?
 
 GitPapers parses all files with a .md extension found in a user's `gitpapers-blog` repository on GitHub.
