@@ -24,10 +24,9 @@ GitPapers parses all files with a .md extension found in a user's `gitpapers-blo
 
 4. Add the document to the `gitpapers-blog` repository on GitHub
 
-   ```sh
-   $ git add *
-   $ git commit -m "First blog post with GitPapers"
-   $ git push origin master
-   ```
+   
+   `$ git add *`
+   `$ git commit -m "First blog post with GitPapers"`
+   `$ git push origin master`
 
 5. Go to your GitPapers page and read your first post!
