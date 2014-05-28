@@ -1,8 +1,7 @@
 #GitPapers
 ### A Blog Publishing Platform for Git
 
-
-
+***
 
 ## Ready to make your first post?
 
