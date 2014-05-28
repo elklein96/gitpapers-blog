@@ -26,7 +26,9 @@ GitPapers parses all files with a .md extension found in a user's `gitpapers-blo
 
    ```
    $ git add *
+  
    $ git commit -m "First blog post with GitPapers"
+  
    $ git push origin master
    ```
 
