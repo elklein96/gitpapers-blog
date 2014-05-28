@@ -8,26 +8,26 @@
 ***
 GitPapers parses all files with a .md extension found in a user's `gitpapers-blog` repository on GitHub.
 
-* Create a new repository called `gitpapers-blog`
+1. Create a new repository called `gitpapers-blog`
 
-* Clone the repository to your local directory
+2. Clone the repository to your local directory
 
-```
-$ git clone http://github.com/username/gitpapers-blog
-```
+   ```
+   $ git clone http://github.com/username/gitpapers-blog
+   ```
 
-* Create a new document in that directory
+3. Create a new document in that directory
 
-```
-$ echo "This is my first blog post to GitPapers" > FirstPost.md
-```
+   ```
+   $ echo "This is my first blog post to GitPapers" > FirstPost.md
+   ```
 
-* Add the document to the `gitpapers-blog` repository on GitHub
+4. Add the document to the `gitpapers-blog` repository on GitHub
 
-```
-$ git add *
-$ git commit -m "First blog post with GitPapers"
-$ git push origin master
-```
+   ```
+   $ git add *
+   $ git commit -m "First blog post with GitPapers"
+   $ git push origin master
+   ```
 
-* Go to your GitPapers page and read your first post!
+5. Go to your GitPapers page and read your first post!
