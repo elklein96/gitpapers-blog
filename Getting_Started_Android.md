@@ -60,8 +60,8 @@ Now that you've set up Eclipse it's time to make your first Android App!
 
 * In **Application Name** enter "Hello Android". Click *Next* four times, then click *Finish*.
 
-> Make sure you have MainActivity.java and activity_main.xml open; these are the Main Activity and Main Layout files.
-> The Java code (in which Android apps are written) will go in the ".java" file, while all of the layout information will go in the ".xml" file.
+> Make sure you have `MainActivity.java` and `activity_main.xml` open; these are the Main Activity and Main Layout files.
+> The Java code (in which Android apps are written) will go in the `.java` file, while all of the layout information will go in the `.xml` file.
 
 * We'll start with the layout. In the `activity_main.xml` select `activity_main.xml` on the bottom of the page to go the to XML view.
 
@@ -103,8 +103,8 @@ After the line `setContentView(R.layout.activity_main);` insert the following: (
 * What did we just do? 
 
 	1. We created a Button and a TextView.
-	2. We linked the button in the layout file to a button in the `onCreate` method, where we named it `helloButton`.
-	3. We linked the TextView in the layout file to a TextView in the `onCreate` method, where we named it `helloLabel`.
+	2. We linked the button in the layout file to a button in the `onCreate` method, and we named it `helloButton`.
+	3. We linked the TextView in the layout file to a TextView in the `onCreate` method, and we named it `label`.
 	4. We assigned the button a listener in `onCreate` (the Main Activity).
 
 * Next, we need to tell the program what to do when the button is clicked.
@@ -113,7 +113,7 @@ After the line `public void onClick(View view){` insert the following:
 
 	label.setText("Hello, Android!");
 
-* Now when we click the button, the TextView, called label, will display "Hello, Android!";
+* Now when we click the button, the TextView, called `label`, will display "Hello, Android!"
 
 ## Testing the App
 
