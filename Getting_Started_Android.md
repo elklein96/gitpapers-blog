@@ -175,10 +175,12 @@ Let's start with option 1.
 
 ***
 
-## Running the App on a Phone
+## Running the App on a Device
 
-* On your Android Device go to **Settings -> More -> Developer Options**
+* On your Android Device go to **Settings -> More -> Developer Options** and turn it on.
 
-<html>
-<p style="color:red"> If Developer Options is not there, Google how to activate it on your version of Android </p>
-</html>
+> If Developer Options is not there, Google how to activate it on your version of Android.
+
+* In **Developer Options** select *USB Debugging*.
+
+* Plug the device into your computer, go to Eclipse and push the play (Run) button.
