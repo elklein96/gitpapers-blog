@@ -147,7 +147,7 @@ Now we have a few options to test our app:
 
 1. We can create an Android Virtual Device to run our code.
 
-2. We can run our app on a real phone.
+2. We can run our app on a real Android device.
 
 We'll start with option 1.
 
