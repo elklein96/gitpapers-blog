@@ -69,7 +69,7 @@ Now that you've set up Eclipse it's time to make your first Android App!
 
 After the line `setContentView(R.layout.activity_main);` insert the following: (There will be errors, just ignore for now)
 
-	
+	```java
 	Button helloButton = (Button) findViewById(R.id.hello-button);
 
 	helloButton.setOnClickListener(new OnClickListener (){
@@ -78,6 +78,6 @@ After the line `setContentView(R.layout.activity_main);` insert the following: (
 			
 		}
 	});
-	
+	```
 
 * In Eclipse, select **Source -> Organize Imports**.
