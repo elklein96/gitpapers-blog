@@ -58,30 +58,12 @@ Now that you've set up Eclipse it's time to make your first Android App!
 
 * In Eclipse, select **File -> New -> Android Application Project**.
 
-* In **Application Name** enter "Hello Android". Click *Next* four times, the click *Finish*.
+* In **Application Name** enter "Hello Android". Click *Next* four times, then click *Finish*.
 
 > Make sure you have MainActivity.java and activity_main.xml open; these are the Main Activity and Main Layout files.
 > The Java code (in which Android apps are written) will go in the ".java" file, while all of the layout information will go in the ".xml" file.
 
-* In the `MainActivity.java` file, you'll notice that a lot of auto-generated code is already there. We'll be focusing on the `onCreate` function. 
-
-> When an Android app is launched, the first function to "fire off" is `onCreate`. 
-
-After the line `setContentView(R.layout.activity_main);` insert the following: (There will be errors, just ignore for now)
-
-	Button helloButton = (Button) findViewById(R.id.helloButton);
-    final TextView label = (TextView) findViewById(R.id.helloLabel);
-
-	helloButton.setOnClickListener(new OnClickListener (){
-		@Override
-		public void onClick(View view){
-			
-		}
-	});
-
-* In Eclipse, select **Source -> Organize Imports**.
-
-* Next, go to `activity_main.xml`. Select `activity_main.xml` on the bottom of the page. 
+* We'll start with the layout. In the `activity_main.xml` select `activity_main.xml` on the bottom of the page to go the to XML view.
 
 After the line `setContentView(R.layout.activity_main);` insert the following:
 	
@@ -98,7 +80,32 @@ After the line `setContentView(R.layout.activity_main);` insert the following:
         android:text="Click me!" />
     
 
-* What did we just do? First, we created a Button and a TextView, linked the button to the button in `activity_main.xml` (the layout file) and assigned it a listener in `onCreate` (the Main Activity).  This means that when the app is launched, a button is drawn on the screen (due to the XML) and will listen for a click.
+> We just created a button called "helloButton" and a TextView called "helloLabel". Both will be drawn when the app is started.
+
+In the `MainActivity.java` file, you'll notice that a lot of auto-generated code is already there. We'll be focusing on the `onCreate` function. 
+
+> When an Android app is launched, the first function to "fire off" is `onCreate`. 
+
+After the line `setContentView(R.layout.activity_main);` insert the following: (There will be errors, just ignore for now)
+
+	Button helloButton = (Button) findViewById(R.id.helloButton);
+    final TextView label = (TextView) findViewById(R.id.helloLabel);
+
+	helloButton.setOnClickListener(new OnClickListener (){
+		@Override
+		public void onClick(View view){
+			
+		}
+	});
+
+* In Eclipse, select **Source -> Organize Imports**.
+    
+* What did we just do? 
+
+	1. We created a Button and a TextView.
+	2. We linked the button in the layout file to a button in the `onCreate` method, where we named it `helloButton`.
+	3. We linked the TextView in the layout file to a TextView in the `onCreate` method, where we named it `helloLabel`.
+	4. We assigned the button a listener in `onCreate` (the Main Activity).
 
 * Next, we need to tell the program what to do when the button is clicked.
 
@@ -107,3 +114,6 @@ After the line `public void onClick(View view){` insert the following:
 	label.setText("Hello, Android!");
 
 * Now when we click the button, the TextView, called label, will display "Hello, Android!";
+
+## Testing the App
+
