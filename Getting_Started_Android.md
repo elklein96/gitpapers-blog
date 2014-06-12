@@ -60,7 +60,7 @@ Now that you've set up Eclipse it's time to make your first Android App!
 
 * In **Application Name** enter "Hello Android". Click *Next* four times, the click *Finish*.
 
-> The two tabs that pop up are the Main Activity and Main Layout files (make sure you have MainActivity.java and activity_main.xml open).
+> Make sure you have MainActivity.java and activity_main.xml open; these are the Main Activity and Main Layout files.
 > The Java code (in which Android apps are written) will go in the ".java" file, while all of the layout information will go in the ".xml" file.
 
 * In the `MainActivity.java` file, you'll notice that a lot of auto-generated code is already there. We'll be focusing on the `onCreate` function. 
@@ -69,7 +69,7 @@ Now that you've set up Eclipse it's time to make your first Android App!
 
 After the line `setContentView(R.layout.activity_main);` insert the following: (There will be errors, just ignore for now)
 
-	```
+	
 	Button helloButton = (Button) findViewById(R.id.hello-button);
 
 	helloButton.setOnClickListener(new OnClickListener (){
@@ -78,6 +78,6 @@ After the line `setContentView(R.layout.activity_main);` insert the following: (
 			
 		}
 	});
-	```
+	
 
 * In Eclipse, select **Source -> Organize Imports**.
