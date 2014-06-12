@@ -70,6 +70,7 @@ Now that you've set up Eclipse it's time to make your first Android App!
 After the line `setContentView(R.layout.activity_main);` insert the following: (There will be errors, just ignore for now)
 
 	Button helloButton = (Button) findViewById(R.id.helloButton);
+    final TextView label = (TextView) findViewById(R.id.helloLabel);
 
 	helloButton.setOnClickListener(new OnClickListener (){
 		@Override
@@ -84,12 +85,25 @@ After the line `setContentView(R.layout.activity_main);` insert the following: (
 
 After the line `setContentView(R.layout.activity_main);` insert the following:
 	
-	
-	<Button
+	<TextView
+        android:id="@+id/helloLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
         android:id="@+id/helloButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Click me!" />
     
 
-* What did we just do? First, we created a Button, linked it to the button in `activity_main.xml` (the layout file) and assigned it a listener in `onCreate` (the Main Activity).  This means that 
+* What did we just do? First, we created a Button and a TextView, linked the button to the button in `activity_main.xml` (the layout file) and assigned it a listener in `onCreate` (the Main Activity).  This means that when the app is launched, a button is drawn on the screen (due to the XML) and will listen for a click.
+
+* Next, we need to tell the program what to do when the button is clicked.
+
+After the line `public void onClick(View view){` insert the following:
+
+	label.setText("Hello, Android!");
+
+* Now when we click the button, the TextView, called label, will display "Hello, Android!";
