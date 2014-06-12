@@ -80,7 +80,9 @@ After the line `setContentView(R.layout.activity_main);` insert the following: (
 
 * In Eclipse, select **Source -> Organize Imports**.
 
-* Next, go to `activity_main.xml`. Select `activity_main.xml` on the bottom of the page. After the line `setContentView(R.layout.activity_main);` insert the following:
+* Next, go to `activity_main.xml`. Select `activity_main.xml` on the bottom of the page. 
+
+After the line `setContentView(R.layout.activity_main);` insert the following:
 	
 	
 	<Button
