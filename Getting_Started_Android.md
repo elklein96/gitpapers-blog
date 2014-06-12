@@ -30,23 +30,23 @@ Next, you need to install the Android SDK.
 
 1. [Click here to download the Android SDK](http://developer.android.com/sdk/index.html).  Unpack it into a directory of your choice.
 
-2. In Eclipse, select **Help -> Install New Software**
+2. In Eclipse, select **Help -> Install New Software**.
 
-3. Click *Add*
+3. Click *Add*.
 
-4. In **Name** enter **ADT Plugin**.  In **Location** enter `https://dl-ssl.google.com/android/eclipse/`. Click *OK*
+4. In **Name** enter "ADT Plugin".  In **Location** enter `https://dl-ssl.google.com/android/eclipse/`. Click *OK*.
 
-5. Select **Developer Tools** (leave NDK alone for now) then click *Next*
+5. Select **Developer Tools** (leave NDK alone for now) then click *Next*.
 
-6. Accept all of the agreements then click *Finish*
+6. Accept all of the agreements then click *Finish*.
 
-7. Restart Eclipse
+7. Restart Eclipse.
 
-8. In the "Welcome to Android Development" window select **Use existing SDKs**. Browse and select the directory where you unpacked the SDK
+8. In the "Welcome to Android Development" window select **Use existing SDKs**. Browse and select the directory where you unpacked the SDK.
 
-9. In Eclipse, select **Window -> Android SDK Manager**
+9. In Eclipse, select **Window -> Android SDK Manager**.
 
-10. Check **Tools**, **Extras** and all of the Android APIs you want to work with. Click **Install** and accept the license agreements
+10. Check **Tools**, **Extras** and all of the Android APIs you want to work with. Click **Install** and accept the license agreements.
 
 ***
 
