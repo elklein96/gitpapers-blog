@@ -69,8 +69,7 @@ Now that you've set up Eclipse it's time to make your first Android App!
 
 After the line `setContentView(R.layout.activity_main);` insert the following: (There will be errors, just ignore for now)
 
-	```java
-	Button helloButton = (Button) findViewById(R.id.hello-button);
+	Button helloButton = (Button) findViewById(R.id.helloButton);
 
 	helloButton.setOnClickListener(new OnClickListener (){
 		@Override
@@ -78,6 +77,15 @@ After the line `setContentView(R.layout.activity_main);` insert the following: (
 			
 		}
 	});
-	```
 
 * In Eclipse, select **Source -> Organize Imports**.
+
+* Next, go to `activity_main.xml`. Select `activity_main.xml` on the bottom. After the line `setContentView(R.layout.activity_main);` insert the following:
+
+	<Button
+        android:id="@+id/helloButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+* What did we just do? First, we created a Button, linked it to the button in `activity_main.xml` (the layout file) and assigned it a listener in `onCreate` (the Main Activity).  This means that 
