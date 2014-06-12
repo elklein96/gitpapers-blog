@@ -106,21 +106,21 @@ In the `MainActivity.java` file, you'll notice that a lot of auto-generated code
 
 When you find the `onCreate` method, replace it with this:
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.activity_main);
 
-        Button helloButton = (Button) findViewById(R.id.helloButton);
-        final TextView label = (TextView) findViewById(R.id.helloLabel);
-        
-        helloButton.setOnClickListener(new OnClickListener (){
-    		@Override
-    		public void onClick(View view){
-    			
-    		}
-    	});
-    }
+	    Button helloButton = (Button) findViewById(R.id.helloButton);
+	    final TextView label = (TextView) findViewById(R.id.helloLabel);
+	    
+	    helloButton.setOnClickListener(new OnClickListener (){
+			@Override
+			public void onClick(View view){
+
+			}
+		});
+	}
 
 * In Eclipse, select **Source -> Organize Imports**.
     
@@ -139,5 +139,44 @@ After the line `public void onClick(View view){` insert the following:
 
 * Now when we click the button, the TextView, called `label`, will display "Hello, Android!"
 
+***
+
 ## Testing the App
 
+Now we have a few options to test our app:
+
+	1. We can create an Android Virtual Device to run our code.
+
+	2. We can run our app on a real phone.
+
+Let's start with option 1.
+
+***
+
+## Creating an Android Virtual Device (AVD)
+
+* In Eclipse, select **Window -> Android Virtual Device Manager**.
+
+* In the AVDM window click *New*.
+
+* In **AVD Name** enter "Nexus_4".
+
+* In **Device** select "Nexus_4".
+
+* In **Target** select "Android 4.4.2 - API Level 19".
+
+* In **CPU/ABI** select "Intel Atom (x86)". (If it doesn't show up, skip this step)
+
+* In **Emulation Options** check "Use Host GPU".
+
+* Click *OK*.
+
+* In the AVDM Window click on "Nexus_4" and hit *Start*. After the AVD starts up go to Eclipse and push the play (Run) button.
+
+***
+
+## Running the App on a Phone
+
+* On your Android Device go to **Settings -> More -> Developer Options**
+
+<p style="color:red"> If Developer Options is not there, Google how to activate it on your version of Android </p>
