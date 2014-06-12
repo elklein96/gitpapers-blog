@@ -145,11 +145,11 @@ After the line `public void onClick(View view){` insert the following:
 
 Now we have a few options to test our app:
 
-	1. We can create an Android Virtual Device to run our code.
+1. We can create an Android Virtual Device to run our code.
 
-	2. We can run our app on a real phone.
+2. We can run our app on a real phone.
 
-Let's start with option 1.
+We'll start with option 1.
 
 ***
 
@@ -175,7 +175,7 @@ Let's start with option 1.
 
 ***
 
-## Running the App on a Device
+## Running the App on an Android Device
 
 * On your Android Device go to **Settings -> More -> Developer Options** and turn it on.
 
