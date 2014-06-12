@@ -65,19 +65,37 @@ Now that you've set up Eclipse it's time to make your first Android App!
 
 * We'll start with the layout. In the `activity_main.xml` select `activity_main.xml` on the bottom of the page to go the to XML view.
 
-After the line `setContentView(R.layout.activity_main);` insert the following:
+Insert the following code, replacing what is already in the XML file with:
 	
-	<TextView
-        android:id="@+id/helloLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="" />
 
-    <Button
-        android:id="@+id/helloButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click me!" />
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context=".MainActivity" >
+
+	    <Button
+	        android:id="@+id/helloButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="150dp"
+	        android:text="Click me!" />
+
+	    <TextView
+	        android:id="@+id/helloLabel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/helloButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="48dp" />
+
+	</RelativeLayout>
     
 
 > We just created a button called "helloButton" and a TextView called "helloLabel". Both will be drawn when the app is started.
@@ -86,17 +104,23 @@ In the `MainActivity.java` file, you'll notice that a lot of auto-generated code
 
 > When an Android app is launched, the first function to "fire off" is `onCreate`. 
 
-After the line `setContentView(R.layout.activity_main);` insert the following: (There will be errors, just ignore for now)
+When you find the `onCreate` method, replace it with this:
 
-	Button helloButton = (Button) findViewById(R.id.helloButton);
-    final TextView label = (TextView) findViewById(R.id.helloLabel);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-	helloButton.setOnClickListener(new OnClickListener (){
-		@Override
-		public void onClick(View view){
-			
-		}
-	});
+        Button helloButton = (Button) findViewById(R.id.helloButton);
+        final TextView label = (TextView) findViewById(R.id.helloLabel);
+        
+        helloButton.setOnClickListener(new OnClickListener (){
+    		@Override
+    		public void onClick(View view){
+    			
+    		}
+    	});
+    }
 
 * In Eclipse, select **Source -> Organize Imports**.
     
