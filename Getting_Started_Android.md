@@ -179,4 +179,6 @@ Let's start with option 1.
 
 * On your Android Device go to **Settings -> More -> Developer Options**
 
+<html>
 <p style="color:red"> If Developer Options is not there, Google how to activate it on your version of Android </p>
+</html>
